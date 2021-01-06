@@ -1,0 +1,42 @@
+Que.Create a username and password login file using nested while loop.
+Ans:
+
+print('Enter correct username and password ')
+count=0
+if count==4:
+    print('account has block')
+while count < 5:
+    username = input('Enter username: ')
+    password = input('Enter password: ')
+    if password=='IND' and username=='INDIA':
+        print('congratulation LOGIN successfully')
+        break
+    else:
+        print('incorrect password. Try again.')
+        count +=1
+    if count==5:
+     print('Account has temporary block')
+
+output:
+Enter correct username and password 
+Enter username: INDIA
+Enter password: IND
+congratulation LOGIN successfully
+
+Enter correct username and password 
+Enter username: ADSJS
+Enter password: SJDJS
+incorrect password. Try again.
+Enter username: SJJD
+Enter password: DCN
+incorrect password. Try again.
+Enter username: SDFG
+Enter password: DFFC
+incorrect password. Try again.
+Enter username: DDFGB
+Enter password: FFFF
+incorrect password. Try again.
+Enter username: SDFG
+Enter password: BGFT
+incorrect password. Try again.
+Account has temporary block
